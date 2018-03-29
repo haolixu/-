@@ -113,3 +113,7 @@ blur，载入文件事件:onload，鼠标镇盖事件:onmouseover等。
 >* inline-block展现inline元素的属性，但是可以设置自己的宽和高了。
 ### 日志文件用于保存？ 
 > 日志文件是 对数据库的更新操作.
+### String,StringBuffer,StringBuilder的区别?
+>* 操作少量的数据使用 String；
+>* 单线程操作大量数据使用 StringBuilder；
+>* 多线程操作大量数据使用 StringBuffer。
