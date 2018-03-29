@@ -100,11 +100,11 @@ blur，载入文件事件:onload，鼠标镇盖事件:onmouseover等。
 > 给需要拖拽的节点绑定mousedown, mousemove, mouseup事件。mousedown事件触发后，开始拖拽。mousemove时，需要通过event.clientX和clientY获取
 拖拽位置，并实时更新位置。mouseup时，拖拽结束。需要注意浏览器边界的情况。
 ### 页面布局常用的HTML5语义元素有哪些？
->* <header>
->* <footer>
->* <section>
->* <article>
->* <aside>
+>* <header 
+>* <footer 
+>* <section
+>* <article
+>* <aside
 ### call 和apply的区别是什么?
 >* call：它可以接受多个参数，第一个参数与apply一样，后面则是一串参数列表。
 >* apply：最多只能有两个参数――新this对象和一个数组argArray。
