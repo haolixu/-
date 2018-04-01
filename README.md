@@ -18,7 +18,7 @@
 >* java语言中的方法属于`对象的成员`,而不是类的成员。不过，`静态方法`属于类的成员。
 
 ### 从1到500的500个数，第一次删除奇数位，第二次删除剩下来的奇数位，以此类推，最后剩下的唯一一位数是：?
-```
+```Java
 分析：
 
 比如：1,2，删除奇数位，那剩下的是2，
@@ -47,7 +47,7 @@
 >* `serialize`：Java 对象序列化为二进制文件。
 
 ### 关于以下程序段,正确的说法是?
-```
+```Java
 String s1="abc"+"def";
 String s2=new String(s1);
 if(s1==s2)
@@ -64,8 +64,8 @@ if(s1.equals(s2))
    equals()指的是值是否相同
    
 ### 指出下列程序运行的结果?
-```
-public class Example{   
+```Java
+public class Example{   
 　　String str=new String("good");   
 　　char[]ch={'a','b','c'};   
 　　public static void main(String args[]){   
@@ -86,8 +86,8 @@ public class Example{
 >* string是`按值传递`，所以在函数中对它的操作只生效于它的副本，与原字符串无关。
 >* char[]是`按址传递`，在函数中根据地址，可以直接对字符串进行操作。
 ### 有如下程序段:
-```
-int total = 0;  
+```Java
+int total = 0;  
 for ( int i = 0; i < 4; i++ ){ 
 if ( i == 1) continue; 
 if ( i == 2) break; 
@@ -298,7 +298,7 @@ D. 16
 >* `组合`:是一种强烈的包含关系。如公司和部门的关系，没有了公司，部门也不能存在了.在类图使用实心的菱形表示，菱形从局部指向整体。
 >* `多重性`:通常在关联、聚合、组合中使用。就是代表有多少个关联对象存在。使用数字..星号（数字）表示。
 ### 函数x的定义如下,问x(x(8))需要调用多少次函数x(int n)?
-```  
+```Java  
 int x(int n) {
 	if(n<=3)
 	return 1;
@@ -336,7 +336,7 @@ x(8)=x(6)+x(4)+1
 > 500,000≤x<1,000,000编码为2
 
 > 1,000,000≤x编码为3
-```
+```Java
 select name,
 case 
     when num_person>=0 and num_person<500000 then 1
