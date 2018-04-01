@@ -1,4 +1,4 @@
-# Java工程师笔试✊✌
+# Java工程师笔试 :bowtie:  :ghost: 
 
 ### 以下关于对象序列化描述正确的是?
 > 对象的序列化主要有两种用途：
@@ -18,7 +18,7 @@
 >* java语言中的方法属于`对象的成员`,而不是类的成员。不过，`静态方法`属于类的成员。
 
 ### 从1到500的500个数，第一次删除奇数位，第二次删除剩下来的奇数位，以此类推，最后剩下的唯一一位数是：?
-```java
+```
 分析：
 
 比如：1,2，删除奇数位，那剩下的是2，
@@ -47,7 +47,7 @@
 >* `serialize`：Java 对象序列化为二进制文件。
 
 ### 关于以下程序段,正确的说法是?
-```java
+```
 String s1="abc"+"def";
 String s2=new String(s1);
 if(s1==s2)
@@ -64,8 +64,8 @@ if(s1.equals(s2))
    equals()指的是值是否相同
    
 ### 指出下列程序运行的结果?
-```Java
-public class Example{   
+```
+public class Example{   
 　　String str=new String("good");   
 　　char[]ch={'a','b','c'};   
 　　public static void main(String args[]){   
@@ -86,8 +86,8 @@ public class Example{  
 >* string是`按值传递`，所以在函数中对它的操作只生效于它的副本，与原字符串无关。
 >* char[]是`按址传递`，在函数中根据地址，可以直接对字符串进行操作。
 ### 有如下程序段:
-```Java
-int total = 0;  
+```
+int total = 0;  
 for ( int i = 0; i < 4; i++ ){ 
 if ( i == 1) continue; 
 if ( i == 2) break; 
@@ -147,33 +147,11 @@ D. 16
 ### C++中引用与指针有什么区别？
 > 引用是变量的别名，引用不占用内存空间，而指针占用内存空间。
 
-### js的数据类型？
-> 字符串、数字、布尔、数组、对象、Null、Undefined.
-### js的事件流模型都有什么？
-> 单击事件:onclick，改变事件:onchange，选中事件:onselect，获得焦点事件:onfocus，失去焦点事件:on
-blur，载入文件事件:onload，鼠标镇盖事件:onmouseover等。
+
 ### 什么是ajax和json？
 >* Ajax用来描述一组技术，它使浏览器可以为用户提供更为自然的浏览体验，它是“Asynchronous JavaScript + XML的简写”。
 >* JSON来自于javascript，是一种比较流行的标准格式，是数据的载体，更加易读、更便于肉眼检查。
-### 想实现一个对页面某个支点的拖曳？如何做？
-> 给需要拖拽的节点绑定mousedown, mousemove, mouseup事件。mousedown事件触发后，开始拖拽。mousemove时，需要通过event.clientX和clientY获取
-拖拽位置，并实时更新位置。mouseup时，拖拽结束。需要注意浏览器边界的情况。
-### 页面布局常用的HTML5语义元素有哪些？
->* header 
->* footer 
->* section
->* article
->* aside
-### call 和apply的区别是什么?
->* call：它可以接受多个参数，第一个参数与apply一样，后面则是一串参数列表。
->* apply：最多只能有两个参数――新this对象和一个数组argArray。
-### 请说明一下static，relative，absolute和fixed元素的特点？
->* static(静态) 不能通过z-index进行层次分级。 
->* relative(相对定位) 参考自身静态位置通过top,bottom,left,right 定位，并且可以通过z-index进行层次分级。
->* fixed（固定定位）所固定的参照对像是可视窗口而并非是body或是父级元素，其总是固定在浏览器窗口的某个位置，并且不受滚动的影响，是绝对的坐标定位。
-### 请解释一下inline和inline-block的区别？
->* inline元素设置width,height属性无效。
->* inline-block展现inline元素的属性，但是可以设置自己的宽和高了。
+
 ### 日志文件用于保存？ 
 > 日志文件是 对数据库的更新操作.
 ### String,StringBuffer,StringBuilder的区别?
@@ -320,7 +298,7 @@ blur，载入文件事件:onload，鼠标镇盖事件:onmouseover等。
 >* `组合`:是一种强烈的包含关系。如公司和部门的关系，没有了公司，部门也不能存在了.在类图使用实心的菱形表示，菱形从局部指向整体。
 >* `多重性`:通常在关联、聚合、组合中使用。就是代表有多少个关联对象存在。使用数字..星号（数字）表示。
 ### 函数x的定义如下,问x(x(8))需要调用多少次函数x(int n)?
-```Java
+```  
 int x(int n) {
 	if(n<=3)
 	return 1;
@@ -358,7 +336,7 @@ x(8)=x(6)+x(4)+1
 > 500,000≤x<1,000,000编码为2
 
 > 1,000,000≤x编码为3
-```Java
+```
 select name,
 case 
     when num_person>=0 and num_person<500000 then 1
