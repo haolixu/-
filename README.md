@@ -1,7 +1,7 @@
 # Java工程师笔试 :bowtie:  :ghost: 
 
 ### 编程实现二分查找算法?
-```
+```Java
 //给定有序查找表array 二分查找给定的值data
 //查找成功返回下标 查找失败返回-1
 static int funBinSearch(int[] array, int data) {
@@ -44,7 +44,7 @@ static int funBinSearch(int[] array, int data) {
 >* 构造器Constructor不能被继承，因此不能重写Override，但可以被重载Overload。
 >* 构造器只能用 **public** **private** **protected**这三个权限修饰符，且不能有返回语句。
 ### 要从文件"file.dat"中读出第10个字节到变量c中,下列哪个方法适合? （）
-```
+```Java
 RandomAccessFile in=new RandomAccessFile("file.dat"); 
 in.skip(9); 
 int c=in.readByte();
@@ -62,7 +62,7 @@ int c=in.readByte();
 >* 4、垃圾回收可以有效的防止内存泄露，有效的使用可以使用的内存
 
 ### A类派生出子类B,B类派生出子类C,并且在Java源代码有如下说明:
-```
+```Java
 1. A a0=new A();
 2. A a1=new B();
 3. A a2=new C();
@@ -70,7 +70,7 @@ int c=in.readByte();
 ```
 > 继承是单继承，并且`继承是具有传递性`的，子类向上转型是无条件的，所以C类也可以说是A类的子类，所以1,2,3行都可以通过编译.
 ### 如果IPv4网络的IP地址为192.168.1.200,子网掩码为255.255.255.0,那么该IP所在的子网id为?
-```
+```Java
 IP：192.168.1.1 
 MASK：255.255.255.0
 将IP和mask写成二进制表示：
@@ -131,7 +131,7 @@ mask:         11111111.11111111.11111111.00000000
 >* java语言中的方法属于`对象的成员`,而不是类的成员。不过，`静态方法`属于类的成员。
 
 ### 从1到500的500个数，第一次删除奇数位，第二次删除剩下来的奇数位，以此类推，最后剩下的唯一一位数是：?
-```
+```Java
 分析：
 比如：1,2，删除奇数位，那剩下的是2，
 1,2,3，删除奇数位，剩下的是2，
@@ -155,7 +155,7 @@ mask:         11111111.11111111.11111111.00000000
 >* `serialize`：Java 对象序列化为二进制文件。
 
 ### 关于以下程序段,正确的说法是?
-```
+```Java
 String s1="abc"+"def";
 String s2=new String(s1);
 if(s1==s2)
@@ -172,7 +172,7 @@ if(s1.equals(s2))
    equals()指的是值是否相同
    
 ### 指出下列程序运行的结果?
-```
+```Java
 public class Example{   
 　　String str=new String("good");   
 　　char[]ch={'a','b','c'};   
@@ -194,7 +194,7 @@ public class Example{
 >* string是`按值传递`，所以在函数中对它的操作只生效于它的副本，与原字符串无关。
 >* char[]是`按址传递`，在函数中根据地址，可以直接对字符串进行操作。
 ### 有如下程序段:
-```
+```Java
 int total = 0;  
 for ( int i = 0; i < 4; i++ ){ 
 if ( i == 1) continue; 
@@ -407,7 +407,7 @@ D. 16
 >* `组合`:是一种强烈的包含关系。如公司和部门的关系，没有了公司，部门也不能存在了.在类图使用实心的菱形表示，菱形从局部指向整体。
 >* `多重性`:通常在关联、聚合、组合中使用。就是代表有多少个关联对象存在。使用数字..星号（数字）表示。
 ### 函数x的定义如下,问x(x(8))需要调用多少次函数x(int n)?
-```  
+```Java  
 int x(int n) {
 	if(n<=3)
 	return 1;
@@ -445,7 +445,7 @@ x(8)=x(6)+x(4)+1
 > 500,000≤x<1,000,000编码为2
 
 > 1,000,000≤x编码为3
-```
+```Java
 select name,
 case 
     when num_person>=0 and num_person<500000 then 1
