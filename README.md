@@ -36,8 +36,8 @@ static int funBinSearch(int[] array, int data) {
 > `Map`:
 >* 1.Map不是collection的子接口或者实现类。Map是一个接口。
 >* 2.Map 的 每个 Entry 都持有两个对象，也就是一个键一个值，Map 可能会持有相同的值对象但键对象必须是唯一的。
->* 3. TreeMap 也通过 Comparator  或者 Comparable 维护了一个排序顺序。
->* 4. Map 里你可以拥有随意个 null 值但最多只能有一个 null 键。
+>* 3.TreeMap 也通过 Comparator  或者 Comparable 维护了一个排序顺序。
+>* 4.Map 里你可以拥有随意个 null 值但最多只能有一个 null 键。
 >* 5.Map 接口最流行的几个实现类是 HashMap、LinkedHashMap、Hashtable 和 TreeMap。
 ### 构造器constructor是否可被override?
 >* 构造器Constructor不能被继承，因此不能重写Override，但可以被重载Overload。
